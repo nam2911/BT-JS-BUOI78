@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>BÀI TẬP JS BUỔI 7-8</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Nhập số nguyên vào mảng và thực hiện một số chức năng</h1>
+    <form>
+      <div class="form-group">
+        <label for="inputNumber">Nhập số nguyên:</label>
+        <input type="number" class="form-control" id="inputNumber" placeholder="Nhập số nguyên vào đây">
+      </div>
+      <button type="button" class="btn btn-primary" onclick="addNumber()">Thêm số</button>
+    </form>
+    <hr>
+    <hr>
+    <h2>Mảng số nguyên được nhập</h2>
+    <ul id="numbersList"></ul>
+    <hr>
+    <h2>Chức năng</h2>
+    <button type="button" class="btn btn-success" onclick="sumOfPositiveNumbers()">Tổng của các số dương</button>
+    <button type="button" class="btn btn-info" onclick="countPositiveNumbers()">Số lượng số dương</button>
+    <button type="button" class="btn btn-primary" onclick="minimumNumber()">Số nhỏ nhất</button>
+    <button type="button" class="btn btn-warning" onclick="minimumPositiveNumber()">Số dương nhỏ nhất</button>
+    <button type="button" class="btn btn-danger" onclick="lastEvenNumber()">Số chẵn cuối cùng</button>
+    <hr>
+    <label for="index1">Vị trí 1:</label>
+    <input type="number" id="index1">
+    <label for="index2">Vị trí 2:</label>
+    <input type="number" id="index2">
+    <button type="button" class="btn btn-success" onclick="swapElements()">Đổi chỗ</button>
+    <button type="button" class="btn btn-danger" onclick="sortArrayAscending()">Sắp xếp tăng dần</button>
+    <button type="button" class="btn btn-dark" onclick="findFirstPrime()">Số nguyên tố đầu tiên</button>
+    <hr>
+    <form>
+      <h2>Nhập dãy số thực và đếm số nguyên</h2>
+      <div class="form-group">
+        <label for="inputNumber">Nhập số thực:</label>
+        <input type="number" class="form-control" id="realNumber" placeholder="Nhập số thực vào đây">
+      </div>
+      <button type="button" class="btn btn-primary" onclick="addRealNumber()">Thêm số</button>
+      <button type="button" class="btn btn-warning" onclick="countIntegers()">Đếm số nguyên</button>
+    </form>
+    <hr>
+    <h2>Dãy số thực đã được nhập</h2>
+    <ul id="realNumbersList"></ul>
+    <hr>
+    <button type="button" class="btn btn-danger" onclick="compareNumbers()">So sánh số lượng số âm và số dương</button>
+    <hr>
+    <hr>
+    <h2>Kết quả</h2>
+    <div class="alert alert-primary" role="alert">
+      Tổng của các số dương: <span id="positiveSum"></span>
+    </div>
+    <div class="alert alert-dark" role="alert">
+      Số lượng số dương: <span id="positiveCount"></span>
+    </div>
+    <div class="alert alert-success" role="alert">
+      Số nhỏ nhất: <span id="minimumNumber"></span>
+    </div>
+    <div class="alert alert-warning" role="alert">
+      Số dương nhỏ nhất: <span id="minimumPositiveNumber"></span>
+    </div>
+    <div class="alert alert-danger" role="alert">
+      Số chẵn cuối cùng: <span id="lastEven"></span>
+    </div>
+    <div class="alert alert-danger" role="alert">
+      Số nguyên tố đầu tiên: <span id="firstPrime"></span>
+    </div>
+    <div class="alert alert-danger" role="alert">
+      Số nguyên: <span id="integerCount"></span>
+    </div>
+    <div class="alert alert-primary" role="alert">
+      So sánh: <span id="comparisonResult"></span>
+    </div>
+   
+  </div>
+
+
+
+  <script src="./main.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
